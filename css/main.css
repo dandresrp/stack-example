@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: beige;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 250px;
+    height: 300px;
+    display: flex;
+}
+
+.wall {
+    flex: 0 0 20px;
+    background-color: black;
+}
+
+.middle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    flex: 0 0 20px;
+    background-color: black;
+}
+
+.books {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.book {
+    flex: 0 0 50px;
+    margin: 0px 2px;
+    border: 2px solid black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 60px;
+    resize: none;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    text-align: center;
+}
+
+#year {
+    appearance: textfield;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[type="button"] {
+    background-color: #f44336;
+}
+
+button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+#close-modal {
+    background-color: #f44336;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+input[type="color"] {
+    appearance: none;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+}
